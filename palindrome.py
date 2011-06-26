@@ -12,28 +12,28 @@ def last(word):
 def middle(word):
 	return word[1:-1]
 
-def isPalindrome(word):
+def is_palindrome(word):
 	if first(word) == last(word):
 		if len(word) == 1:
 			return True
 		else:
-			return isPalindrome(middle(word))
+			return is_palindrome(middle(word))
 	else:
 		return False
 
 # Tests
-print isPalindrome('ana')
-print isPalindrome('maria')
-print isPalindrome('jose')
-print isPalindrome('banana')
-print isPalindrome('aba')
-print isPalindrome('cururuc')
+print is_palindrome('ana')
+print is_palindrome('maria')
+print is_palindrome('jose')
+print is_palindrome('banana')
+print is_palindrome('aba')
+print is_palindrome('cururuc')
 
 # A versao abaixo, que esta comentada, e outra forma de se fazer a mesma 
 # funcao, com o mesmo resultado, porem de uma forma mais curta e direta
 # sem a divisao dos trabalhos, mas para iniciantes talvez possa ser dificil
 
-# def isPalindrome(word):
+# def is_palindrome(word):
 # 	if word[0] == word[-1]:
-# 		return True if len(word) == 1 else isPalindrome(word[1:-1]) 
+# 		return True if len(word) == 1 else is_palindrome(word[1:-1]) 
 # 	return False
