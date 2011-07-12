@@ -34,6 +34,6 @@ print is_palindrome('cururuc')
 # sem a divisao dos trabalhos, mas para iniciantes talvez possa ser dificil
 
 # def is_palindrome(word):
-# 	if word[0] == word[-1]:
-# 		return True if len(word) == 1 else is_palindrome(word[1:-1]) 
-# 	return False
+# 	if len(word) == 0:
+# 		return True
+# 	return is_palindrome(word[1:-1]) if word[0] == word[-1] else False
