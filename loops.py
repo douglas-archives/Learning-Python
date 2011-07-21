@@ -52,3 +52,9 @@ def return_values():
 	return [value for value in ['a','b','c']]
 
 print return_values()
+
+# nesta forma de loop eu consigo extrair esses valores
+# que, neste caso, cada elemento da lista eh uma tupla 
+# que contem pares de elementos armazenados
+for x, y in [('a','b'), ('c', 'd'), ('e', 'f')]:
+	print x, y
